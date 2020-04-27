@@ -1,1 +1,7 @@
-<h1>The index page just for fun</h1>
+<h1>Latest Posts on our Page</h1>
+
+<% @posts.each do |p| %>
+  <div class="post_wrapper">
+    <h2 class="title"><%= link_to p.title, p %><h2>
+    <p class="date"><%= time_ago_in_words(p.created_at) %><p>
+<% end %>
