@@ -12,22 +12,22 @@
   </head>
 
   <body>
-  <div id="sidebar">
-    <ul>
-      <li class="category"><%= link_to 'Tumblr', root_path %></li>
-      <li><%= link_to 'Posts', root_path %></li>
-      <li>About</li>
-    </ul>
+    <div id="sidebar">
+      <ul>
+        <li class="category"><%= link_to 'Tumblr', root_path %></li>
+        <li><%= link_to 'Posts', root_path %></li>
+        <li>About</li>
+      </ul>
   
-    <p class="sign_in">Sign In</p>
-</div>
+      <p class="sign_in">Sign In</p>
+    </div>
 
     <div id="main_content">
       <div id="header">
         <p>Post Feed</p>
         <div class="buttons">
           <button class="button"><%= link_to "Make Post", new_post_path %></button>
-          <button class="button">"Log Out"</button>
+          <button class="button">Log Out</button>
         </div>
       </div>
 
