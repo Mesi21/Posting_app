@@ -5,8 +5,10 @@
 
   <p class="date">
     <small> Submitted <%= time_ago_in_words(@post.created_at) %> ago </small>
-    <%= link_to 'Edit', edit_post_path(@post) %>
-    <%= link_to 'Delete', post_path(@post), method: :delete, data: { confirm: "Do you really want to delete it?" } %>
+    <% if user_signed_in? %>
+      <%= link_to 'Edit', edit_post_path(@post) %>
+      <%= link_to 'Delete', post_path(@post), method: :delete, data: { confirm: "Do you really want to delete it?" } %>
+    <% end %>
   </p>
 
   <p class="body">

@@ -18,8 +18,9 @@
         <li><%= link_to "Posts", root_path %></li>
         <li><%= link_to "About", about_path %></li>
       </ul>
-  
-      <p class="sign_in">Sign In</p>
+      <% if !user_signed_in? %>
+        <p class="sign_in"><%= link_to "User Login", new_user_session_path %></p>
+      <% end %>
     </div>
 
     <div id="main_content">
@@ -31,11 +32,12 @@
         <% else %>
           <%= link_to "Back to Post Feed", root_path %>
         <% end %>
-
-        <div class="buttons">
-          <button class="button"><%= link_to "Make Post", new_post_path %></button>
-          <button class="button">Log Out</button>
-        </div>
+        <% if user_signed_in? %>
+          <div class="buttons">
+            <button class="button"><%= link_to "Make Post", new_post_path %></button>
+            <button class="button"><%= link_to "Log Out", destroy_user_session_path, method: :delete %></button>
+          </div>
+        <% end %>  
       </div>
 
       <% flash.each do |name, msg| %>
