@@ -1,26 +1,38 @@
-# README
+<img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
 
-# Soon to be udpdated
+# Posting App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is just a small app for posting and commenting on different posts for registered users. 
 
-Things you may want to cover:
+## Contribution guide
 
-* Ruby version
+1. Clone the project
+```bash
+  git clone https://github.com/Mesi21/Posting_app.git
+  cd Posting_app
+  install the gems by running: `$ bundle install`
+  update the bundle: `$ bundle update`
+  start the server `$ rails s`
+  open browser: `localhost:3000`
+```
 
-* System dependencies
+2. Then :heavy_plus_sign: add your contribution
+3. And Feel free to make a PR
 
-* Configuration
+## Tehnical tools:
 
-* Database creation
+- Rails
+- Ruby
 
-* Database initialization
+* System dependencies:
+- gems: devise
 
-* How to run the test suite
+## Contributors
 
-* Services (job queues, cache servers, search engines, etc.)
+- Emese Molnar [@Mesi21](https://github.com/Mesi21)
 
-* Deployment instructions
+## Course Project
 
-* ...
+- This is a project of a [Udemy](https://www.udemy.com/) course about Ruby on Rails, built by following the explanations of the author of the course. 
+
+### If you like this project don't forgot to support it by giving a :star: 
